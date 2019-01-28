@@ -1,0 +1,18 @@
+
+{% extends 'base.html.twig' %}
+{% block body %}
+<div>
+    <ul>
+        <table border="1px solid">
+        {% for auto,price in autos %}
+            <tr>
+
+                <td>{{auto}}</td>
+                <td>{{price}}</td>
+
+            </tr>
+        {% endfor %}
+        </table>
+    </ul>
+</div>
+{% endblock %}
